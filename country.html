@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+</head>
+<style>
+    #country-container{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        gap: 15px;
+        
+    }
+    .country{
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .btn{
+        padding: 5px 20px 5px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <header>
+        <h1>I am exploring the world all countries</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Show selected Country Details </h1>
+            <div id="country-details">
+
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>This Is the country list</h1>
+                <div>
+                    <button onclick="loadCountries()">
+                        Countries
+                    </button>
+                </div>
+                <div id="country-container">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/country.js"></script>
+</body>
+</html>
